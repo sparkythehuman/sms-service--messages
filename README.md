@@ -9,7 +9,7 @@
 
 ### Environment Variables
 
-- `TABLE_NAME`: AWS DynamoDB table name
+None
 
 ## AWS Event Example
 
