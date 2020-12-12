@@ -73,7 +73,7 @@ def handle(event, context):
         'POST': _create
     }
     if operation in operations:
-        return operations[operation](json.loads(event['body']), _get_username(event))
+        return operations[operation](json.loads(event['body'] or '{}'), _get_username(event))
     else:
         raise ValueError(f'Unable to run operation for HTTP METHOD: {operation}')
     
